@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nof1 Lab — Democratized Biohacking</title>
+  <meta name="description" content="Run structured n-of-1 trials. Log daily data. See what actually works for your biology." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-brand">Nof<span class="accent">1</span></div>
+    <div id="loader-track">
+      <div id="loader-bar"></div>
+    </div>
+    <div id="loader-percent">0%</div>
+  </div>
+
+  <!-- Fixed Header -->
+  <header class="site-header">
+    <nav>
+      <a href="#" class="nav-logo">Nof<span class="accent">1</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#protocol">Protocol</a>
+        <a href="#analytics">Analytics</a>
+        <a href="#" class="nav-cta">Launch App</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero with vial in corner -->
+  <section class="hero" id="hero">
+    <div class="hero-vial">
+      <canvas id="canvas"></canvas>
+    </div>
+    <div class="hero-text">
+      <span class="section-label hero-label">Democratized Biohacking</span>
+      <h1 class="hero-heading">
+        <span class="word">Your</span>
+        <span class="word">Biology.</span><br />
+        <span class="word">Your</span>
+        <span class="word">Evidence.</span>
+      </h1>
+      <p class="hero-tagline">Run structured n-of-1 trials on the compounds that matter to you. No guesswork — just personal data and real statistical analysis.</p>
+      <div class="hero-actions">
+        <a href="#" class="btn-primary">Start Your First Trial</a>
+        <a href="#about" class="btn-ghost">Learn More</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <svg width="16" height="24" viewBox="0 0 16 24" fill="none">
+        <path d="M8 4V20M8 20L2 14M8 20L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-text">N-OF-1 TRIALS &mdash; COMPOUND LIBRARY &mdash; PERSONAL ANALYTICS &mdash; STRUCTURED PROTOCOLS &mdash; EVIDENCE-BASED &mdash; N-OF-1 TRIALS &mdash; COMPOUND LIBRARY &mdash; PERSONAL ANALYTICS &mdash; STRUCTURED PROTOCOLS &mdash; EVIDENCE-BASED &mdash;</div>
+    </div>
+  </div>
+
+  <!-- Content Sections -->
+  <section class="content-section" id="about" data-animation="slide-left">
+    <div class="section-grid">
+      <div class="section-text">
+        <span class="section-label">002 / The Problem</span>
+        <h2 class="section-heading">Population studies don't describe <em>you</em></h2>
+        <p class="section-body">Clinical trials average results across thousands. But your response to a compound is unique — shaped by your genetics, lifestyle, and biology. Nof1 Lab lets you run the only trial that matters: yours.</p>
+      </div>
+      <div class="section-visual">
+        <div class="visual-card">
+          <div class="visual-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zM12 6v6l4 2"/></svg>
+          </div>
+          <span class="visual-stat">n = 1</span>
+          <span class="visual-label">The only sample size that matters</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section" id="protocol" data-animation="slide-right">
+    <div class="section-grid reverse">
+      <div class="section-text">
+        <span class="section-label">003 / Structured Protocols</span>
+        <h2 class="section-heading">Design your experiment in minutes</h2>
+        <p class="section-body">Choose from AB, ABA, or ABAB crossover designs. Set phase durations, washout periods, and blinding mode. Define the outcomes that matter — cognition, energy, sleep, mood — with validated measurement scales.</p>
+      </div>
+      <div class="section-visual">
+        <div class="protocol-stack">
+          <div class="protocol-phase phase-baseline">Baseline</div>
+          <div class="protocol-phase phase-intervention">Intervention</div>
+          <div class="protocol-phase phase-washout">Washout</div>
+          <div class="protocol-phase phase-intervention">Intervention</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section" data-animation="fade-up">
+    <div class="section-grid">
+      <div class="section-text">
+        <span class="section-label">004 / Daily Logging</span>
+        <h2 class="section-heading">Two minutes a day builds your evidence base</h2>
+        <p class="section-body">Log doses, track outcomes, record side effects and confounders. The check-in adapts to your trial's current phase — baseline, intervention, or washout. Every data point strengthens your signal.</p>
+      </div>
+      <div class="section-visual">
+        <div class="visual-card">
+          <div class="log-preview">
+            <div class="log-row"><span class="log-dot active"></span><span>Dose taken</span><span class="log-check">&#10003;</span></div>
+            <div class="log-row"><span class="log-dot active"></span><span>Energy level</span><span class="log-val">7/10</span></div>
+            <div class="log-row"><span class="log-dot active"></span><span>Focus rating</span><span class="log-val">8/10</span></div>
+            <div class="log-row"><span class="log-dot"></span><span>Side effects</span><span class="log-val dim">None</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Banner -->
+  <section class="stats-section" data-animation="stagger-up">
+    <div class="stats-grid">
+      <div class="stat">
+        <span class="stat-number" data-value="50" data-decimals="0">0</span>
+        <span class="stat-suffix">+</span>
+        <span class="stat-label">Compounds in library</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number" data-value="7" data-decimals="0">0</span>
+        <span class="stat-suffix"></span>
+        <span class="stat-label">Protocol designs</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number" data-value="0.83" data-decimals="2">0</span>
+        <span class="stat-suffix">d</span>
+        <span class="stat-label">Avg effect size detected</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number" data-value="2" data-decimals="0">0</span>
+        <span class="stat-suffix">min</span>
+        <span class="stat-label">Daily check-in</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section" id="analytics" data-animation="scale-up">
+    <div class="section-grid reverse">
+      <div class="section-text">
+        <span class="section-label">005 / Personal Analytics</span>
+        <h2 class="section-heading">See what's actually working</h2>
+        <p class="section-body">Phase comparison charts, effect sizes, statistical significance — all computed automatically. Your dashboard updates in real-time as you log. No spreadsheets. No guesswork. Just clear, personal evidence.</p>
+      </div>
+      <div class="section-visual">
+        <div class="chart-preview">
+          <div class="chart-bar-group">
+            <div class="chart-label">Baseline</div>
+            <div class="chart-bar" data-height="35"></div>
+          </div>
+          <div class="chart-bar-group">
+            <div class="chart-label">Phase 1</div>
+            <div class="chart-bar accent-bar" data-height="68"></div>
+          </div>
+          <div class="chart-bar-group">
+            <div class="chart-label">Washout</div>
+            <div class="chart-bar" data-height="42"></div>
+          </div>
+          <div class="chart-bar-group">
+            <div class="chart-label">Phase 2</div>
+            <div class="chart-bar accent-bar" data-height="72"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" data-animation="clip-reveal">
+    <div class="cta-inner">
+      <span class="section-label">006 / Get Started</span>
+      <h2 class="cta-heading">Begin your first trial</h2>
+      <p class="cta-body">Pick a compound. Design your protocol. Start logging. See results in weeks, not years.</p>
+      <a href="#" class="btn-primary btn-lg">Launch Nof1 Lab</a>
+      <p class="cta-note">Free during beta. Pseudonymous by default.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-brand">Nof<span class="accent">1</span> Lab</span>
+      <span class="footer-copy">Research Use Only</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
